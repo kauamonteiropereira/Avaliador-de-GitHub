@@ -21,7 +21,6 @@ public class AvaliadorDePerfil {
 
             HttpClient client = HttpClient.newHttpClient();
 
-            // Requisicao do perfil
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create("https://api.github.com/users/" + usuario))
                     .build();
